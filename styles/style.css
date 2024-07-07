@@ -1,0 +1,169 @@
+:root {
+  --color-white-400: #ffffff;
+  --color-black-400: #000000;
+  --color-black-300: #12151d;
+  --color-black-200: #2c2d2e;
+  --color-gray-400: #999999;
+  --color-gray-300: #e1e2e5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+/* General */
+body {
+  background-color: var(--color-white-400);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--color-black-400);
+}
+
+/* Layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.layout__header {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 40px;
+  padding: 40px;
+  background-color: var(--color-black-300);
+  color: var(--color-white-400);
+}
+
+.layout__photo {
+  flex: 0 0 300px;
+  display: flex;
+  align-items: center;
+  margin-block-start: -40px;
+  margin-block-end: -40px;
+  height: 380px;
+  background-color: var(--color-black-200);
+}
+
+.layout__details {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout__profession {
+  margin-bottom: 48px;
+}
+
+.layout__contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 240px);
+  row-gap: 24px;
+}
+
+.layout__title {
+  margin-bottom: 32px;
+}
+
+.layout__body {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+
+.layout__aside {
+  flex: 0 0 auto;
+  padding: 40px;
+}
+
+.layout__aside-wrap {
+  width: 300px;
+  height: 100%;
+  background-color: var(--color-gray-300);
+  margin-block-start: -40px;
+  margin-block-end: -40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.layout__content {
+  flex: 1 1 auto;
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+  padding-inline-end: 25%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.layout__group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+/* Components */
+.photo {
+  width: 300px;
+  height: 300px;
+}
+
+.contact__label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.contact__value {
+  color: var(--color-gray-400);
+}
+
+/* Typography */
+.title {
+  margin: 0;
+}
+
+.title--h1 {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.title--h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.pile {
+  padding: 4px 12px;
+  background-color: var(--color-black-200);
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--color-black-200);
+}
+
+small {
+  font-size: 14px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding-inline-start: 16px;
+}
